@@ -1,0 +1,29 @@
+.container{
+    margin: 0px;
+    padding: 0px;
+    background-color: antiquewhite;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20;
+    
+
+}
+#userpic{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+
+    
+
+}
+
+/* styling the app.jsx */
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}

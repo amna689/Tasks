@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.uname{
+    background-color: blanchedalmond;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-bottom: 50px;
+    display: flex;
+}
+.uage{
+    background-color: rgb(189, 124, 27);
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}

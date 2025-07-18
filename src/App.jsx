@@ -23,6 +23,7 @@ import Active from './Component/Active'
 import Basic  from './Component/Basic';
 import PasswordDisplay from './Component/PasswordDisplay';
 import QuoteGenerate from './Component/QuoteGenerate';
+import BMICALCULATOR from './Component/BMICALCULATOR.jsx';
 
 
 
@@ -30,11 +31,17 @@ import QuoteGenerate from './Component/QuoteGenerate';
 
  
 const App = () => {
-  const[quote,setquote]=useState("")
-  const handlequote=(updatedquote)=>{
-    setquote(updatedquote);
+  const[BMICALC,setMICALC]=useState("")
+  const handleBMI=(newBMI)=>{
+    setMICALC(newBMI)
 
   }
+
+  // const[quote,setquote]=useState("")
+  // const handlequote=(updatedquote)=>{
+  //   setquote(updatedquote);
+
+  
   // const [password,setpassword]=useState("")
   // const handlepassword=(newpassword)=>{
   //   setpassword(newpassword);
@@ -62,7 +69,9 @@ const App = () => {
   
   return(
     <div>
-      <QuoteGenerate generatequote={handlequote} quote={quote}/>
+      <BMICALCULATOR handleBMI={handleBMI} />
+      <p><strong>YOUR BMI:</strong>{BMICALC}</p>
+      {/* <QuoteGenerate generatequote={handlequote} quote={quote}/> */}
       {/* <button onClick={generatepassword} style={{backgroundColor:"red",width:"150px",height:"100px"}}>generatepassowrd</button>
        <h3><strong> Your password:</strong></h3>
        <p>{password}</p>

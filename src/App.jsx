@@ -22,6 +22,7 @@ import Input from './Component/Input';
 import Active from './Component/Active'
 import Basic  from './Component/Basic';
 import PasswordDisplay from './Component/PasswordDisplay';
+import QuoteGenerate from './Component/QuoteGenerate';
 
 
 
@@ -29,16 +30,24 @@ import PasswordDisplay from './Component/PasswordDisplay';
 
  
 const App = () => {
-  const [password,setpassword]=useState("")
-  function generatepassword(){
-    const characters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789@#*&$";
-    let newPassword=""
-    
-     for (let i = 0; i < 10; i++) {
-     newPassword += characters.charAt(Math.floor(Math.random() * characters.length));
-    }
-    setpassword(newPassword)
+  const[quote,setquote]=useState("")
+  const handlequote=(updatedquote)=>{
+    setquote(updatedquote);
+
   }
+  // const [password,setpassword]=useState("")
+  // const handlepassword=(newpassword)=>{
+  //   setpassword(newpassword);
+  // };
+  // function generatepassword(){
+  //   const characters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789@#*&$";
+  //   let newPassword=""
+    
+  //    for (let i = 0; i < 10; i++) {
+  //    newPassword += characters.charAt(Math.floor(Math.random() * characters.length));
+  //   }
+  //   setpassword(newPassword)
+  // }
   
   // function Panel({ title, children }) {
   // const [isActive, setIsActive] = useState(false);
@@ -53,8 +62,11 @@ const App = () => {
   
   return(
     <div>
-      <button onClick={generatepassword} style={{backgroundColor:"red",width:"150px",height:"100px"}}>generatepassowrd</button>
-      <PasswordDisplay password={password}/>
+      <QuoteGenerate generatequote={handlequote} quote={quote}/>
+      {/* <button onClick={generatepassword} style={{backgroundColor:"red",width:"150px",height:"100px"}}>generatepassowrd</button>
+       <h3><strong> Your password:</strong></h3>
+       <p>{password}</p>
+      <PasswordDisplay passwordgenerator={ handlepassword}/> */}
       {/* <section className="panel">
       <h3>{title}</h3>
       {isActive ? (

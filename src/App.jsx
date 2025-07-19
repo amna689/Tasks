@@ -30,6 +30,7 @@ import DynamicGreeting from './weathercomponent/DynamicGreetings.jsx';
 import ThemeSwitcher from './Component/ThemeSwitcher.jsx';
 import RenderComponent from './Component/RenderComponent.jsx';
 import Weather from './Component/Weather.jsx';
+import Counter from './Component/Counter.jsx';
 
 
 
@@ -80,6 +81,7 @@ const App = () => {
       {/* <ThemeSwitcher/> */}
       <RenderComponent/>
       <Weather/>
+      <Counter/>
       {/* <LoggedIn/> */}
       {/* <BMICALCULATOR handleBMI={handleBMI} />
       <p><strong>YOUR BMI:</strong>{BMICALC}</p> */}

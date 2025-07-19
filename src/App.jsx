@@ -28,6 +28,7 @@ import LoggedIn from './Component/LoggedIn.jsx';
 import AgeVerification from './Component/AgeVerification.jsx';
 import DynamicGreeting from './weathercomponent/DynamicGreetings.jsx';
 import ThemeSwitcher from './Component/ThemeSwitcher.jsx';
+import RenderComponent from './Component/RenderComponent.jsx';
 
 
 
@@ -75,7 +76,8 @@ const App = () => {
     <div>
       <AgeVerification/>
       <DynamicGreeting/>
-      <ThemeSwitcher/>
+      {/* <ThemeSwitcher/> */}
+      <RenderComponent/>
       {/* <LoggedIn/> */}
       {/* <BMICALCULATOR handleBMI={handleBMI} />
       <p><strong>YOUR BMI:</strong>{BMICALC}</p> */}

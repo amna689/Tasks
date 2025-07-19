@@ -5,7 +5,7 @@ function DynamicGreeting(){
     const Greet=()=>{
         const hour=parseInt(hours)
         if(hour<12){
-            setgreeting("GoodMorning")
+            setgreeting(alert("GoodMorning"))
         }
         else if(hour<18){
             setgreeting("Good Afternoon")
